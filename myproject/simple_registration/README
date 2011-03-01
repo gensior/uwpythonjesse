@@ -1,0 +1,14 @@
+Version 0.1  Use at own risk.
+
+How to install.
+
+1.  Copy simple_registration to project.  My-Project/simple_registration.
+
+2.  Add 'simple_registration', to installed apps. 
+
+3.  Make sure the 'django.template.loaders.app_directories.load_template_source', template loader is installed.  Restart your server so the /simple_registration/templates/simple_registration/ directory will be found as a loading source for templates. 
+
+4.  Add (r'^accounts/', include('simple_registration.urls')), to base urls file.  NB do not add a namespace to this include, auth url reverse features break if you attempt to namespace them.
+
+
+  
